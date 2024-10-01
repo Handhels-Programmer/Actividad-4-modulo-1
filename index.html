@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="do">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 4 modulo 1</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+    <h1>Tabla de datos de Redes y Formulario de Solicitud</h1>
+
+    <h2>Tabla de datos de redes</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Correo</th>
+                <th>Area de trabajo</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>001</td>
+                <td>Handhels Inc</td>
+                <td>handhelsinc@gmail.com</td>
+                <td>Seguridad digital</td>
+            </tr>
+            <tr>
+                <td>002</td>
+                <td>Rialengo Tours</td>
+                <td>rialengotours@gmail.com</td>
+                <td>Viajes y excursiones</td>
+            </tr>
+            <tr>
+                <td>003</td>
+                <td>ProgrApp Web</td>
+                <td>programmer@handhelsinc.net</td>
+                <td>Programacion Web</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br>
+    <br>
+    
+    <h2>Formulario de Solicitud</h2>
+    <form action="/submit" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre">
+
+        <label for="nombre">Correo:</label>
+        <input type="text" id="correo" name="correo" placeholder="Ingresa tu correo">
+
+        <label for="opciones">Selecciona area de trabajo:</label>
+        <select id="opciones" name="opciones">
+            <option value="opcion1">Seguridad digital</option>
+            <option value="opcion2">Viajes y excursiones</option>
+            <option value="opcion3">Programacion Web</option>
+        </select>
+
+    <br>
+    <br>
+    
+        <label for="suscripcion">Opciones de suscripción:</label>
+        <br>
+        <input type="checkbox" id="opcionA" name="suscripcion" value="newsletter">
+        <label for="opcionA">Plan Basico</label>
+        <br>
+        <input type="checkbox" id="opcionB" name="suscripcion" value="ofertas">
+        <label for="opcionB">Plan Normal</label>
+        <br>
+        <input type="checkbox" id="opcionC" name="suscripcion" value="actualizaciones">
+        <label for="opcionC">Plan Premium</label>
+
+        <br><br>
+        <input type="submit" value="Enviar">
+    </form>
+
+</body>
+</html>
